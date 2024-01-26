@@ -16,9 +16,7 @@ interface ApiResponse {
 
 const mockSignIn = (formData: { email: string; password: string }) => {
   return new Promise((resolve, reject) => {
-    // Simulate API call with a delay
     setTimeout(() => {
-      // Replace this condition with actual authentication logic
       if (
         formData.email === "test@example.com" &&
         formData.password === "password"
@@ -107,7 +105,6 @@ const SignIn = ({ isOpen, closeModal }: SignInProps) => {
                         className="object-contain"
                       />
                     </button>
-                    {/* ... (Rest of your modal content remains the same) */}
                     <div className="flex flex-1 flex-col gap-2">
                       <label>Email</label>
                       <input
