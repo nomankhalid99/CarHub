@@ -24,9 +24,11 @@ module.exports = {
         },
         grey: "#747A88",
       },
+      
       backgroundImage: {
         'pattern': "url('/pattern.png')",
-        'hero-bg': "url('/hero-bg.png')"
+        'hero-bg': "url('/hero-bg.png')",
+        'gradient-bg': "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(107,140,255,1) 50%, rgba(44,90,255,1) 100%)"
       }
     },
   },

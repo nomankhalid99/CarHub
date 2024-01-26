@@ -16,7 +16,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
   return (
     <>
       <Transition appear show={isOpen} as={Fragment}>
-        <Dialog as="div" className="relative z-10" onClose={closeModal}>
+        <Dialog as="div" className="relative z-50" onClose={closeModal}>
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -69,7 +69,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                     <div className="flex gap-3">
                       <div className="relative flex-1 w-full h-24 bg-primary-blue-100 rounded-lg">
                         <Image
-                          src={generateCarImageUrl(car,'29')}
+                          src={generateCarImageUrl(car, "29")}
                           alt="car-model"
                           fill
                           priority
@@ -78,7 +78,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                       </div>
                       <div className="relative flex-1 w-full h-24 bg-primary-blue-100 rounded-lg">
                         <Image
-                          src={generateCarImageUrl(car,'33')}
+                          src={generateCarImageUrl(car, "33")}
                           alt="car-model"
                           fill
                           priority
@@ -87,7 +87,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                       </div>
                       <div className="relative flex-1 w-full h-24 bg-primary-blue-100 rounded-lg">
                         <Image
-                          src={generateCarImageUrl(car,'13')}
+                          src={generateCarImageUrl(car, "13")}
                           alt="car-model"
                           fill
                           priority
